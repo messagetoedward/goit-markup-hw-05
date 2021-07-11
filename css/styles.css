@@ -268,12 +268,6 @@ body {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.features-icon-conteiner:hover {
-  background-color: var(--accent-color);
 }
 
 .features-icon {
