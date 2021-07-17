@@ -413,39 +413,46 @@
                     <use href=./icons/button.svg#icon-xbutton></use>
                 </svg>
             </button>
-            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="contact-form">
-                <label for="contact-name">
+                <label class="modal-form-input">
                     Имя
-                    <input type="text" class="contact-form-input" placeholder="место для иконки *" name="contact-form-name" required
-                        minlength="2" id="contact-name">
+                    <span class="contact-form-input-wrapper">
+                        <input type="text" class="contact-form-input" placeholder="" name="contact-form-name" required minlength="2">
+                        <svg class="contact-form-icon">
+                            <use href="./icons/contact-icon&send.svg#icon-contact-form-name"></use>
+                        </svg>
+                    </span>
                 </label>
                 
-                <label for="contact-tel">
+                <label class="modal-form-input">
                     Телефон
-                    <input type="tel" class="contact-form-input" placeholder="место для иконки *" name="contact-form-phone" required
-                        minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="063-000-00-00" id="contact-tel">
+                    <span class="contact-form-input-wrapper">
+                        <input type="tel" class="contact-form-input" placeholder="" name="contact-form-phone" required minlength="10"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="063-000-00-00">
+                        <svg class="contact-form-icon">
+                            <use href="./icons/contact-icon&send.svg#icon-contact-form-phone"></use>
+                        </svg>
+                    </span>
                 </label>
 
-                <label for="contact-email">
+                <label class="modal-form-input">
                     Почта
-                    <input type="email" class="contact-form-input" placeholder="место для иконки *" name="contact-form-mail" required
-                        id="contact-email">
+                    <span class="contact-form-input-wrapper">
+                        <input type="email" class="contact-form-input" placeholder="" name="contact-form-mail" required>
+                        <svg class="contact-form-icon">
+                            <use href="./icons/contact-icon&send.svg#icon-contact-form-mail"></use>
+                        </svg>
+                    </span>
                 </label>
 
-                <textarea name="contact-comments" id="" class="contact-form-comments" placeholder="Введите текст"></textarea>
-
-                <!-- <label for="contact-comments">
+                <label class="modal-form-input">
                     Комментарий
-                    <input type="text" class="contact-form-input" placeholder="место для иконки" name="contact-form-comments"
-                        id="contact-comments">
-                </label> -->
-
-                
-                <label for="contact-policy">
-                    <input class="contact-form-policy" type="checkbox" id="contact-policy">
-                    Соглашаюсь с рассылкой и принимаю Условия договора
+                    <textarea name="contact-comments" id="" class="contact-form-comments" placeholder="Введите текст"></textarea>
                 </label>
+
+                <input class="contact-form-policy" type="checkbox" id="form-policy">
+                <label for="form-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="contact-form-policy-link">Условия договора</a></label>
 
                 <button type="submit" class="submit-button">Отправить</button>
             </form>
