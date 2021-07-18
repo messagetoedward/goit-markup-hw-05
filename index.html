@@ -61,7 +61,7 @@
         <!---Features-->
             <section class="section">
                 <div class="conteiner">
-                    <h2 hidden>Особенности</h2>
+                    <h2 class="visually-hidden">Особенности</h2>
                     <ul class="list features-content">
                         <li class="features-list">
                             <div class="features-icon-conteiner">
@@ -418,7 +418,7 @@
                 <label class="modal-form-input">
                     Имя
                     <span class="contact-form-input-wrapper">
-                        <input type="text" class="contact-form-input" placeholder="" name="contact-form-name" required minlength="2">
+                        <input type="text" class="contact-form-input" placeholder="" name="contact-form-name" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Аа-Яя, Aa-Zz" required minlength="2">
                         <svg class="contact-form-icon">
                             <use href="./icons/contact-icon&send.svg#icon-contact-form-name"></use>
                         </svg>
@@ -451,8 +451,8 @@
                     <textarea name="contact-comments" id="" class="contact-form-comments" placeholder="Введите текст"></textarea>
                 </label>
 
-                <input class="contact-form-policy" type="checkbox" id="form-policy">
-                <label for="form-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="contact-form-policy-link">Условия договора</a></label>
+                <input class="contact-form-policy visually-hidden" type="checkbox" id="form-policy">
+                <label for="form-policy" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="contact-form-policy-link">Условия договора</a></label>
 
                 <button type="submit" class="submit-button">Отправить</button>
             </form>
